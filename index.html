@@ -2,39 +2,26 @@
     <!-- wrapper to remove extra-space after pages -->
     <div class="wrapper">
       <section id="one" class="page">
-        <img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="" />
-        <h3>TITLE</h2>
-          <h3>SUBTITLE</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
+        <div class="container">
+            <img src="myimage.jpg" alt="Moody Food Restaurant">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="card">
+            <!-- Card content goes here -->
+            <h1>Card Title</h1>
+            <p>Card description goes here.</p>
+        </div>
+        <div class="text-container container">
+          <h3>TITLE</h2>
+            <h3>SUBTITLE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
       </section>
-      <section id="two" class="page">
-        <img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="" />
-        <h3>TITLE</h2>
-          <h3>SUBTITLE</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </p>
-      </section>
+      <!-- <section id="two" class="page">
+        
+      </section> -->
     </div>
 </body>
 
@@ -60,7 +47,7 @@
     body {
         margin: 0;
         padding: 0;
-        background: #ddd;
+        background: #ffffff;
         text-align: center;
         transform-origin: top center;
         display: flex;
@@ -78,9 +65,9 @@
     .page {
         width: 21cm;
         height: 29.7cm;
-        padding: 2cm;
-        margin: 1cm 0;
-        background: white;
+        /* padding: 2cm; */
+        /* margin: 1cm 0; */
+        background: #000;
         box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
         border: 1px #d3d3d3 solid;
         position: relative;
@@ -89,12 +76,57 @@
         justify-content: center;
     }
 
+    .container {
+        position: relative;
+        width: auto;
+        top:0%;
+        height: auto;
+        margin: 0;
+    }
+
+    .container p, h3 {
+      color: #ffffff;
+    }
+
     img {
         width: 100%;
-        height: 200px;
+        height: 750px;
         object-fit: cover;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+
+    .image-overlay {
         position: absolute;
-        top: 0;
-        left: 0;
+        left: 0%;
+        bottom: 0%;
+        left: 50%;
+        width: 100%;
+        height: 750px;
+        transform: translate(-50%, 0%);
+        background: linear-gradient(rgba(0, 0, 0, 0), #000); /* Adjust the gradient colors and opacity as needed */
+    }
+
+    .text-container {
+        position: relative;
+
+    }
+
+    .card {
+      width: 25%;
+      box-sizing: border-box; /* Include padding and border in the total width */
+      padding: 20px; /* Adjust padding as needed */
+      margin: 10px; /* Adjust margin as needed */
+      background-color: #fff; /* Card background color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+      border-radius: 8px; /* Optional: Add border-radius for rounded corners */
     }
 </style>
+
+
+
+
+
+
+
