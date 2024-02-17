@@ -6,14 +6,18 @@
             <img class="main-img" src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Moody Food Restaurant">
             <div class="image-overlay"></div>
         </div>
+        <div class="card">
+            <!-- Card content goes here -->
+            <h2>Card Title</h2>
+            <p>Card description goes here.</p>
+        </div>
         <h1>TITLE</h1>
+        <div class="qr-container">
+            <img src="qr-code.png" alt="qr-code">
+        </div>
+        
         <div class="text-container">
-            <h2>
-                See you there!
-            </h2>
-            <p>
-                Show this code to the staff and get your 10% discount!
-            </p>
+                      
         </div>
       </section>
       <!-- <section id="two" class="page">
@@ -63,25 +67,15 @@
     .page {
         width: 21cm;
         height: 29.7cm;
+        /* padding: 2cm; */
+        /* margin: 1cm; */
         background: #000;
         box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
+        border: 1px #d3d3d3 solid;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    h1 {
-        display: inline-block;
-        position: absolute;
-        z-index: 2;
-        top: 10%;
-        left: 10%;
-        font-size: 8em;
-        font-weight: 100;
-        background: radial-gradient(ellipse, #8d8c87, #f0b802);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .container {
@@ -89,18 +83,6 @@
         width: auto;
         height: auto;
         z-index: 1;
-    }
-
-    .text-container {
-        justify-content: start;
-        justify-items: start;
-        text-justify: auto;
-        text-align: left; /* Set text-align to left */
-        padding: 5%;
-        font-size: 25px;
-        background: radial-gradient(ellipse, #525150, #f0b802);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .qr-container img {
@@ -124,6 +106,20 @@
         height: 750px;
         transform: translate(-50%, 0%);
         background: linear-gradient(rgba(0, 0, 0, 0), #000); /* Adjust the gradient colors and opacity as needed */
+    }
+
+    h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 2;
+        top: 10%;
+        left: 10%;
+        font-size: 8em;
+        font-weight: 100;
+        background: radial-gradient(ellipse, #8d8c87, #f0b802);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .card {
