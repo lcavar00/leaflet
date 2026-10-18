@@ -1,0 +1,11 @@
+<button onclick="incrementCounter()">Click me!</button>
+<p>You have clicked the button <span id="score">0</span> times.</p>
+
+<script>
+let clickCount = 0;
+
+function incrementCounter() {
+  clickCount++;
+  document.getElementById('score').innerText = clickCount;
+}
+</script>
